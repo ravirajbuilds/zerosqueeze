@@ -8,8 +8,8 @@ export function PrivacySection() {
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
         </svg>
       ),
-      title: "Fully on-device",
-      desc: "All signal processing and ML inference runs on your iPhone. Nothing is sent to any server — ever.",
+      title: "Runs on your phone",
+      desc: "Every calculation happens right on your iPhone. None of it gets sent to a server, because there isn't one.",
       color: "#2FD27A",
     },
     {
@@ -30,8 +30,8 @@ export function PrivacySection() {
           <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
         </svg>
       ),
-      title: "Zero data collection",
-      desc: "No analytics, no ad SDKs, no third-party trackers. We don't know you exist — and that's by design.",
+      title: "Nothing collected",
+      desc: "No analytics, no ad kits, no trackers. We genuinely have no idea who you are, and we'd like to keep it that way.",
       color: "#A24BFF",
     },
     {
@@ -58,7 +58,7 @@ export function PrivacySection() {
             <span className="gradient-text">your phone</span>
           </h2>
           <p className="text-[#A7B2C6] mt-4 max-w-xl mx-auto text-lg">
-            Your cardiac data is yours. We built ZeroSqueeze with privacy as a hard constraint, not an afterthought.
+            Your heart data belongs to you, full stop. We didn't bolt privacy on at the end. It's the reason the app has no account and no server.
           </p>
         </div>
 

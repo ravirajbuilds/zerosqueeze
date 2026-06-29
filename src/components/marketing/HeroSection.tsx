@@ -23,7 +23,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-[#A7B2C6] text-lg leading-relaxed max-w-[480px]">
-            ZeroSqueeze reads your heartbeat's vibrations from your chest and the pulse in your fingertip — heart rate, HRV, ejection time, a blood-pressure index, and hemoglobin, in seconds. All on-device. Estimates only, not a medical diagnosis.
+            Rest your phone on your chest and a finger on the camera. In about a minute you get your heart rate, HRV, a blood-pressure reading, even a hemoglobin estimate. It all stays on your phone. These are estimates, not a medical diagnosis.
           </p>
 
           {/* Metric chips floating */}
@@ -81,7 +81,7 @@ export function HeroSection() {
           </div>
           {/* Floating Heart Check score card — the app's signature result. */}
           <div
-            className="hidden lg:block absolute -left-6 bottom-6 z-20 zs-card-tint p-4 w-[190px] animate-float"
+            className="hidden lg:block absolute -left-10 bottom-6 z-20 zs-card-tint p-4 w-[220px] animate-float"
             style={{ ["--tint" as string]: "#FF3D71", animationDelay: "0.8s" }}
           >
             <span className="zs-eyebrow block mb-3" style={{ ["--tint" as string]: "#A7B2C6" }}>Heart Check</span>

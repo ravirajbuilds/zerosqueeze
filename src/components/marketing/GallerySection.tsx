@@ -14,10 +14,10 @@ export function GallerySection() {
         <div className="text-center mb-16">
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#FF3D71]">App Screens</span>
           <h2 className="font-display font-bold text-[#EAF0FA] mt-3" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
-            Built for clarity,{" "}
-            <span className="gradient-text">designed for calm</span>
+            Easy to read,{" "}
+            <span className="gradient-text">easy to trust</span>
           </h2>
-          <p className="text-[#A7B2C6] mt-4 max-w-xl mx-auto">Every number at a glance. No clutter, no noise — just your heart, in numbers.</p>
+          <p className="text-[#A7B2C6] mt-4 max-w-xl mx-auto">Open the app and you see your numbers right away. We kept the screens simple on purpose, so a reading takes a second to understand.</p>
         </div>
 
         <div className="flex justify-center gap-6 lg:gap-12 flex-wrap">

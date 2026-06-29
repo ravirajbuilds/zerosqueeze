@@ -9,13 +9,13 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Eyebrow */}
         <div className="text-center mb-16">
-          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#22D3EE]">Two Sensors, One Heartbeat</span>
+          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#22D3EE]">Two sensors you already carry</span>
           <h2 className="font-display font-bold text-[#EAF0FA] mt-3" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
             Your iPhone already has{" "}
-            <span className="gradient-text">everything</span>
+            <span className="gradient-text">what it takes</span>
           </h2>
           <p className="text-[#A7B2C6] mt-4 max-w-xl mx-auto text-lg">
-            Two sensors. Zero accessories. Real biometric data in under a minute.
+            No band to charge, nothing to buy. Two sensors that ship inside every iPhone do the work, and a reading takes under a minute.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export function FeaturesSection() {
               ),
               eyebrow: "Accelerometer",
               title: "Chest SCG",
-              desc: "Seismocardiography captures the micro-vibrations of your heartbeat through the phone placed on your chest — no electrode required.",
+              desc: "Lie back, rest the phone on your chest, and its motion sensor picks up the tiny vibrations each heartbeat makes. No electrodes, no straps.",
               color: "#FF3D71",
             },
             {
@@ -43,7 +43,7 @@ export function FeaturesSection() {
               ),
               eyebrow: "Camera + Flash",
               title: "Finger PPG",
-              desc: "Photoplethysmography uses the rear camera and flash to detect blood volume changes in your fingertip with each pulse.",
+              desc: "Cover the rear camera and flash with a fingertip. The camera watches the light change as blood pulses through, the same trick a pulse oximeter uses.",
               color: "#22D3EE",
             },
             {
@@ -54,7 +54,7 @@ export function FeaturesSection() {
               ),
               eyebrow: "AI Fusion",
               title: "Heart Check",
-              desc: "Both signals are fused on-device by a machine learning model trained on thousands of validated readings to produce your Heart Check score.",
+              desc: "Run both sensors at once and the app lines the signals up to read your blood pressure and a heart-health score. It all happens on the phone.",
               color: "#A24BFF",
             },
           ].map((f) => (
@@ -91,20 +91,20 @@ export function FeaturesSection() {
           {[
             {
               eyebrow: "Hemoglobin",
-              title: "Anemia awareness",
-              desc: "Estimate hemoglobin from your fingertip — no needle. Skin tone and sex tune your reference range so the screen reads Normal, Mild, Moderate, or Severe.",
+              title: "A check for anemia",
+              desc: "Get a hemoglobin estimate from your fingertip, no needle involved. We use your skin tone and sex to set the right range, then tell you if it reads low.",
               color: "#FF7A4D",
             },
             {
               eyebrow: "Trends",
-              title: "Daily readiness",
-              desc: "A single score from your heart-rate and HRV trends tells you whether your body is recovered or running hot today.",
+              title: "How ready you are today",
+              desc: "One score, built from your heart rate and HRV over time, that tells you whether you've recovered or you're pushing it.",
               color: "#22D3EE",
             },
             {
               eyebrow: "Calm",
-              title: "Guided breathing",
-              desc: "Paced sessions to settle your pulse and reset — then measure again to see the change in your numbers.",
+              title: "Breathe it down",
+              desc: "Follow a paced breathing session to bring your pulse down, then take another reading and watch the numbers move.",
               color: "#A24BFF",
             },
           ].map((f) => (

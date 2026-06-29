@@ -20,7 +20,7 @@ export function CTABandSection() {
             <span className="gradient-text">your heart?</span>
           </h2>
           <p className="text-[#A7B2C6] mt-4 text-lg max-w-md mx-auto">
-            Free download. No account. No wearable. Your iPhone is already the device.
+            It's free, there's no account to make, and there's nothing to strap on. The phone in your hand is all you need.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export function FooterSection() {
               <span className="font-display font-bold text-[#EAF0FA]">ZeroSqueeze</span>
             </div>
             <p className="text-[#717C90] text-sm leading-relaxed max-w-xs">
-              Cuffless cardiac sensing for iPhone. Heart health awareness at your fingertips — literally.
+              Heart checks on your iPhone. No cuff, no wearable, no needle.
             </p>
           </div>
           {/* Links */}

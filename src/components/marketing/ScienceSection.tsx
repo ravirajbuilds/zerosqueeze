@@ -13,10 +13,10 @@ export function ScienceSection() {
           </h2>
           <div className="flex flex-col gap-6 text-[#A7B2C6] leading-relaxed">
             <p>
-              <strong className="text-[#EAF0FA]">Seismocardiography (SCG)</strong> is a technique studied since the 1990s that measures the mechanical vibrations the beating heart transmits through the chest wall. Published research shows a strong correlation between SCG waveform features and blood pressure.
+              <strong className="text-[#EAF0FA]">Seismocardiography (SCG)</strong> sounds exotic, but it just means reading the faint vibrations your heart sends through your chest wall. Researchers have studied it since the 1990s, and the shape of those vibrations tracks closely with blood pressure.
             </p>
             <p>
-              <strong className="text-[#EAF0FA]">Photoplethysmography (PPG)</strong> is the same optical principle used in every smartwatch and pulse oximeter — detecting changes in light absorption as blood volume pulses through your fingertip. ZeroSqueeze uses the iPhone's camera flash as the light source.
+              <strong className="text-[#EAF0FA]">Photoplethysmography (PPG)</strong> is the same idea your smartwatch and the clip at the doctor's office use: shine a light through your skin and watch it dim and brighten as blood pulses past. Here the iPhone's flash is the light.
             </p>
             <p>
               Measured at the same moment, the two signals reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong> — how long the pulse takes to travel from the chest to the fingertip. On-device machine learning turns that into a cuffless blood-pressure index, a heart-health score, and an estimated heart age. From the PPG signal alone it also models <strong className="text-[#EAF0FA]">hemoglobin</strong>, using your skin tone and sex to set the reference range. All processing happens locally — your data never touches a server.

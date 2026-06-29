@@ -4,20 +4,20 @@ export function HowItWorksSection() {
   const steps = [
     {
       num: "01",
-      title: "Place phone on chest",
-      desc: "Lie flat and rest your iPhone face-up on your sternum. The accelerometer captures micro-vibrations from each heartbeat — the SCG signal.",
+      title: "Lie back, phone on your chest",
+      desc: "Rest your iPhone face-up on your breastbone and stay still. The motion sensor feels the small kick of each heartbeat through your chest.",
       color: "#FF3D71",
     },
     {
       num: "02",
-      title: "Cover the lens with your finger",
-      desc: "Press your fingertip lightly over the rear camera and flash. The PPG sensor reads subtle changes in blood volume with every pulse.",
+      title: "A finger over the camera",
+      desc: "Lay a fingertip lightly over the rear camera and flash. The camera reads the pulse moving through your finger, beat by beat.",
       color: "#22D3EE",
     },
     {
       num: "03",
-      title: "Get your Heart Check",
-      desc: "Measuring both at once lets ZeroSqueeze time the pulse from chest to fingertip — the pulse transit time. In under 60 seconds, on-device AI fuses the signals into a cuffless blood-pressure index, a heart-health score, and your estimated heart age. Nothing leaves your phone.",
+      title: "Read your Heart Check",
+      desc: "With both going at once, the app can time how long your pulse takes to travel from chest to finger. In under a minute that becomes your blood pressure, a heart-health score, and an estimate of your heart's age. None of it leaves the phone.",
       color: "#A24BFF",
     },
   ];
