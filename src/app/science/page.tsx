@@ -4,9 +4,10 @@ import { SeismicMark } from "@/components/marketing/SeismicMark";
 
 export default function SciencePage() {
   return (
-    <div style={{ background: "#0A0E18" }} className="min-h-svh">
+    <div style={{ background: "#0A0E18" }} className="min-h-svh relative">
+      <div className="zs-bloom" aria-hidden />
       <Navbar />
-      <main className="pt-28 pb-0">
+      <main className="pt-28 pb-0 relative z-10">
         {/* Hero */}
         <section className="px-6 max-w-4xl mx-auto mb-20">
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#22D3EE]">The Science</span>

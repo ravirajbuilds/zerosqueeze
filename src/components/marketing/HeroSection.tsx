@@ -1,6 +1,7 @@
 "use client";
 import { SeismicMark } from "./SeismicMark";
 import { PhoneFrame } from "./PhoneFrame";
+import { ScoreRing } from "./ScoreRing";
 
 export function HeroSection() {
   return (
@@ -71,21 +72,30 @@ export function HeroSection() {
 
         {/* Phone side */}
         <div className="flex justify-center lg:justify-end items-center relative">
-          {/* Glow behind phone */}
-          <div
-            className="absolute rounded-full"
-            style={{
-              width: 280, height: 280,
-              background: "radial-gradient(circle, rgba(162,75,255,0.2) 0%, rgba(255,61,113,0.1) 50%, transparent 80%)",
-              filter: "blur(40px)",
-            }}
-          />
-          {/* SeismicMark behind phone */}
-          <div className="absolute">
-            <SeismicMark size={200} />
+          {/* Spiral wavefront glow behind */}
+          <div className="absolute opacity-80">
+            <SeismicMark size={300} />
           </div>
           <div className="relative animate-float z-10">
             <PhoneFrame />
+          </div>
+          {/* Floating Heart Check score card — the app's signature result. */}
+          <div
+            className="absolute -left-2 sm:left-2 lg:-left-6 bottom-6 z-20 zs-card-tint p-4 w-[190px] animate-float"
+            style={{ ["--tint" as string]: "#FF3D71", animationDelay: "0.8s" }}
+          >
+            <span className="zs-eyebrow block mb-3" style={{ ["--tint" as string]: "#A7B2C6" }}>Heart Check</span>
+            <div className="flex items-center gap-3">
+              <ScoreRing value={92} size={72} label="" color="#FF3D71" />
+              <div className="flex flex-col gap-0.5">
+                <span className="font-display font-extrabold text-[#EAF0FA] text-lg leading-none">Excellent</span>
+                <span className="font-mono text-[11px] text-[#A7B2C6]">Heart age 31</span>
+              </div>
+            </div>
+            <div className="mt-3 pt-3 border-t border-[#27324A] flex items-baseline gap-1.5">
+              <span className="font-display font-bold text-xl" style={{ color: "#A24BFF" }}>118/76</span>
+              <span className="font-mono text-[10px] text-[#717C90]">mmHg · cuffless</span>
+            </div>
           </div>
         </div>
       </div>

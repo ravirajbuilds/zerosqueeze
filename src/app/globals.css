@@ -188,6 +188,68 @@ body {
 .glow-violet { box-shadow: 0 0 40px rgba(162,75,255,0.3), 0 0 80px rgba(162,75,255,0.1); }
 .glow-cyan { box-shadow: 0 0 24px rgba(34,211,238,0.25); }
 
+/* ─────────────────────────────────────────────────────────────────
+ * App-faithful primitives — mirror the iOS ZSTheme so the site reads
+ * like the app: deep ethereal bloom, rounded glass cards, tracked
+ * section eyebrows, the signature rose→violet pulse reserved for accents.
+ * ───────────────────────────────────────────────────────────────── */
+
+/* Ethereal page bloom — echoes the app icon's glow on deep ink. Fixed,
+ * behind everything, pointer-transparent. Two focal blooms: rose low-left,
+ * violet high-right, like the spiral mark's wavefront. */
+.zs-bloom {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 50% at 18% 88%, rgba(255,61,113,0.10) 0%, transparent 60%),
+    radial-gradient(55% 45% at 82% 8%, rgba(162,75,255,0.12) 0%, transparent 55%),
+    radial-gradient(45% 40% at 50% 40%, rgba(34,211,238,0.04) 0%, transparent 70%);
+}
+
+/* Glass card — surface #141B2B, r20, hairline border, soft depth shadow.
+ * Same recipe as the app's zsCard(). */
+.zs-card {
+  background: #141B2B;
+  border: 0.5px solid #27324A;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+/* Accent-tinted card: faint colored wash from the top-left + colored border,
+ * matching app's zsCard(tint:). Drive the hue with --tint inline. */
+.zs-card-tint {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--tint) 10%, transparent) 0%, transparent 55%),
+    #141B2B;
+  border: 0.5px solid color-mix(in srgb, var(--tint) 35%, #27324A);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.zs-card:hover, .zs-card-tint:hover {
+  border-color: color-mix(in srgb, var(--tint, #FF3D71) 45%, #27324A);
+  transition: border-color 0.25s ease;
+}
+
+/* Section eyebrow — 11px bold, tracked, uppercase. The app's sectionLabel(). */
+.zs-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tint, #A7B2C6);
+}
+
+/* Slow spiral rotation for the logo wavefront. */
+@keyframes zs-spin-slow { to { transform: rotate(360deg); } }
+.animate-spin-slow { animation: zs-spin-slow 18s linear infinite; }
+@keyframes zs-bloom-breathe {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+.animate-bloom-breathe { animation: zs-bloom-breathe 8s ease-in-out infinite; }
+
 /* SeismicMark animations */
 @keyframes seismic-ring {
   0% { transform: scale(0.5); opacity: 0.8; }

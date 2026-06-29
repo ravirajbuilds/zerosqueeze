@@ -60,9 +60,9 @@ export function FeaturesSection() {
           ].map((f) => (
             <div
               key={f.title}
-              className="rounded-2xl border border-[#27324A] bg-[#141B2B] p-6 flex flex-col gap-4 hover:border-opacity-80 transition-colors"
-              style={{ boxShadow: `0 0 0 0 transparent`, transition: "box-shadow 0.3s" }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 30px ${f.color}18`; }}
+              className="zs-card-tint p-6 flex flex-col gap-4"
+              style={{ ["--tint" as string]: f.color, transition: "box-shadow 0.3s" }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 30px ${f.color}22`; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}
             >
               <div
@@ -108,8 +108,8 @@ export function FeaturesSection() {
               color: "#A24BFF",
             },
           ].map((f) => (
-            <div key={f.title} className="rounded-2xl border border-[#27324A] bg-[#141B2B] p-6 flex flex-col gap-3">
-              <span className="font-mono text-[10px] tracking-widest uppercase block" style={{ color: f.color }}>{f.eyebrow}</span>
+            <div key={f.title} className="zs-card-tint p-6 flex flex-col gap-3" style={{ ["--tint" as string]: f.color }}>
+              <span className="zs-eyebrow block" style={{ ["--tint" as string]: f.color }}>{f.eyebrow}</span>
               <h3 className="font-display font-semibold text-xl text-[#EAF0FA]">{f.title}</h3>
               <p className="text-[#A7B2C6] text-sm leading-relaxed">{f.desc}</p>
             </div>

@@ -11,9 +11,10 @@ import { CTABandSection, FooterSection } from "./CTAAndFooter";
 
 export function HomeLandingPage() {
   return (
-    <div className="min-h-svh" style={{ background: "#0A0E18" }}>
+    <div className="min-h-svh relative" style={{ background: "#0A0E18" }}>
+      <div className="zs-bloom" aria-hidden />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <HeroSection />
         <FeaturesSection />
         <HowItWorksSection />

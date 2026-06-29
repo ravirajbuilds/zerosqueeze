@@ -3,9 +3,10 @@ import { CTABandSection, FooterSection } from "@/components/marketing/CTAAndFoot
 
 export default function PrivacyPage() {
   return (
-    <div style={{ background: "#0A0E18" }} className="min-h-svh">
+    <div style={{ background: "#0A0E18" }} className="min-h-svh relative">
+      <div className="zs-bloom" aria-hidden />
       <Navbar />
-      <main className="pt-28 pb-0">
+      <main className="pt-28 pb-0 relative z-10">
         <section className="px-6 max-w-3xl mx-auto mb-20">
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#2FD27A]">Privacy Policy</span>
           <h1 className="font-display font-bold text-[#EAF0FA] mt-3 mb-6" style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)" }}>

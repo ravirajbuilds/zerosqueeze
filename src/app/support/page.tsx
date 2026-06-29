@@ -18,9 +18,10 @@ export default function SupportPage() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <div style={{ background: "#0A0E18" }} className="min-h-svh">
+    <div style={{ background: "#0A0E18" }} className="min-h-svh relative">
+      <div className="zs-bloom" aria-hidden />
       <Navbar />
-      <main className="pt-28 pb-0">
+      <main className="pt-28 pb-0 relative z-10">
         {/* Hero */}
         <section className="px-6 max-w-3xl mx-auto mb-16 text-center">
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#717C90]">Support</span>
