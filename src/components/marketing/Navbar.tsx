@@ -25,7 +25,7 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
-          <SeismicMark size={34} spin={false} />
+          <SeismicMark size={34} spin={false} glow={false} />
           <span className="font-display font-bold text-lg text-[#EAF0FA] tracking-tight">ZeroSqueeze</span>
         </Link>
 

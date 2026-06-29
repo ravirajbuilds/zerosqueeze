@@ -73,8 +73,8 @@ export function HeroSection() {
         {/* Phone side */}
         <div className="flex justify-center lg:justify-end items-center relative">
           {/* Spiral wavefront glow behind */}
-          <div className="absolute opacity-80">
-            <SeismicMark size={300} />
+          <div className="absolute opacity-70">
+            <SeismicMark size={340} spin glow />
           </div>
           <div className="relative animate-float z-10">
             <PhoneFrame />
