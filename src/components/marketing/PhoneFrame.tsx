@@ -24,8 +24,8 @@ export function PhoneFrame({ variant = "dashboard" }: PhoneFrameProps) {
       <div className="absolute inset-2 rounded-[2rem] overflow-hidden bg-[#0A0E18] flex flex-col p-4 pt-8 gap-3">
         {/* Status bar */}
         <div className="flex justify-between items-center mb-1">
-          <span className="text-[8px] font-mono text-[#717C90]">9:41 AM</span>
-          <span className="text-[8px] font-mono text-[#717C90]">ZeroSqueeze</span>
+          <span className="text-[8px] font-mono text-[#8B97AB]">9:41 AM</span>
+          <span className="text-[8px] font-mono text-[#8B97AB]">ZeroSqueeze</span>
         </div>
 
         {variant === "dashboard" && <DashboardScreen />}
@@ -33,7 +33,7 @@ export function PhoneFrame({ variant = "dashboard" }: PhoneFrameProps) {
         {variant === "hrv" && <HRVScreen />}
 
         {/* Bottom disclaimer */}
-        <p className="text-[6px] font-mono text-[#717C90] text-center mt-auto">Estimates · not a diagnosis</p>
+        <p className="text-[6px] font-mono text-[#8B97AB] text-center mt-auto">Estimates · not a diagnosis</p>
       </div>
       {/* Side buttons */}
       <div className="absolute -right-1 top-24 w-1 h-8 bg-[#27324A] rounded-full" />
@@ -44,7 +44,7 @@ export function PhoneFrame({ variant = "dashboard" }: PhoneFrameProps) {
 }
 
 function ScreenTitle({ text }: { text: string }) {
-  return <span className="font-mono text-[8px] tracking-widest text-[#717C90] uppercase block">{text}</span>;
+  return <span className="font-mono text-[8px] tracking-widest text-[#8B97AB] uppercase block">{text}</span>;
 }
 
 /* ---------------- Today Dashboard ---------------- */
@@ -56,12 +56,12 @@ function DashboardScreen() {
       </div>
       {/* Mini BP readout */}
       <div className="rounded-lg border border-[#27324A] bg-[#141B2B] p-2.5">
-        <span className="font-mono text-[7px] tracking-widest text-[#717C90] uppercase block mb-1">Blood Pressure</span>
+        <span className="font-mono text-[7px] tracking-widest text-[#8B97AB] uppercase block mb-1">Blood Pressure</span>
         <div className="flex items-baseline gap-1">
           <span className="font-display font-bold text-sm text-[#EAF0FA]">118</span>
-          <span className="text-[#717C90] text-xs">/</span>
+          <span className="text-[#8B97AB] text-xs">/</span>
           <span className="font-display font-bold text-sm text-[#EAF0FA]">76</span>
-          <span className="font-mono text-[7px] text-[#717C90]">mmHg</span>
+          <span className="font-mono text-[7px] text-[#8B97AB]">mmHg</span>
         </div>
         <div className="w-full h-1 rounded-full mt-1.5 bg-[#0C1322] overflow-hidden">
           <div className="h-full w-[38%] rounded-full" style={{ background: "linear-gradient(to right, #2FD27A, #FFB020)" }} />
@@ -76,9 +76,9 @@ function DashboardScreen() {
           { label: "RR", value: "14", unit: "br/m", color: "#A24BFF" },
         ].map((m) => (
           <div key={m.label} className="rounded-md border border-[#27324A] bg-[#0C1322] p-1.5">
-            <span className="font-mono text-[7px] text-[#717C90] uppercase block">{m.label}</span>
+            <span className="font-mono text-[7px] text-[#8B97AB] uppercase block">{m.label}</span>
             <span className="font-display font-bold text-xs" style={{ color: m.color }}>{m.value}</span>
-            <span className="font-mono text-[6px] text-[#717C90]"> {m.unit}</span>
+            <span className="font-mono text-[6px] text-[#8B97AB]"> {m.unit}</span>
           </div>
         ))}
       </div>
@@ -96,14 +96,14 @@ function BPScreen() {
       <ScreenTitle text="Blood Pressure · 7 days" />
       <div className="flex items-baseline gap-1.5 -mt-1">
         <span className="font-display font-bold text-3xl text-[#EAF0FA]">118</span>
-        <span className="text-[#717C90] text-lg">/</span>
+        <span className="text-[#8B97AB] text-lg">/</span>
         <span className="font-display font-bold text-3xl text-[#EAF0FA]">76</span>
-        <span className="font-mono text-[8px] text-[#717C90] ml-0.5">mmHg avg</span>
+        <span className="font-mono text-[8px] text-[#8B97AB] ml-0.5">mmHg avg</span>
       </div>
       <Sparkline series={[sys, dia]} colors={["#FF3D71", "#A24BFF"]} min={70} max={130} />
       <div className="flex justify-between px-0.5">
         {days.map((d, i) => (
-          <span key={i} className="font-mono text-[7px] text-[#717C90]">{d}</span>
+          <span key={i} className="font-mono text-[7px] text-[#8B97AB]">{d}</span>
         ))}
       </div>
       <div className="flex gap-3 mt-1">
@@ -146,7 +146,7 @@ function HRVScreen() {
       <ScreenTitle text="Heart Rate Variability" />
       <div className="flex items-baseline gap-1.5 -mt-1">
         <span className="font-display font-bold text-3xl text-[#22D3EE]">48</span>
-        <span className="font-mono text-[8px] text-[#717C90]">ms · 7-day avg 45</span>
+        <span className="font-mono text-[8px] text-[#8B97AB]">ms · 7-day avg 45</span>
       </div>
       {/* Bar chart */}
       <div className="flex items-end justify-between gap-1.5 h-20 px-0.5">
@@ -164,11 +164,11 @@ function HRVScreen() {
       </div>
       <div className="flex justify-between gap-1.5 px-0.5">
         {days.map((d, i) => (
-          <span key={i} className="flex-1 text-center font-mono text-[7px] text-[#717C90]">{d}</span>
+          <span key={i} className="flex-1 text-center font-mono text-[7px] text-[#8B97AB]">{d}</span>
         ))}
       </div>
       <div className="rounded-md border border-[#27324A] bg-[#0C1322] p-1.5 mt-1">
-        <span className="font-mono text-[7px] text-[#717C90] uppercase">Trend</span>
+        <span className="font-mono text-[7px] text-[#8B97AB] uppercase">Trend</span>
         <span className="font-display font-bold text-xs text-[#2FD27A] ml-1">↑ Recovering</span>
       </div>
     </>

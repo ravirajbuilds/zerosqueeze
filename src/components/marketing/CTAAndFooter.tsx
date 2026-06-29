@@ -37,7 +37,7 @@ export function CTABandSection() {
           Download on App Store
         </a>
 
-        <p className="text-[#717C90] text-xs">
+        <p className="text-[#8B97AB] text-xs">
           Requires iPhone · iOS 16+ · Free · Estimates only, not a medical diagnosis
         </p>
       </div>
@@ -56,13 +56,13 @@ export function FooterSection() {
               <SeismicMark size={28} />
               <span className="font-display font-bold text-[#EAF0FA]">ZeroSqueeze</span>
             </div>
-            <p className="text-[#717C90] text-sm leading-relaxed max-w-xs">
+            <p className="text-[#8B97AB] text-sm leading-relaxed max-w-xs">
               Heart checks on your iPhone. No cuff, no wearable, no needle.
             </p>
           </div>
           {/* Links */}
           <div>
-            <span className="font-mono text-[10px] tracking-widest uppercase text-[#717C90] block mb-4">Learn</span>
+            <span className="font-mono text-[10px] tracking-widest uppercase text-[#8B97AB] block mb-4">Learn</span>
             <ul className="flex flex-col gap-2.5">
               {[
                 { label: "How It Works", href: "/#how-it-works" },
@@ -75,7 +75,7 @@ export function FooterSection() {
             </ul>
           </div>
           <div>
-            <span className="font-mono text-[10px] tracking-widest uppercase text-[#717C90] block mb-4">Support</span>
+            <span className="font-mono text-[10px] tracking-widest uppercase text-[#8B97AB] block mb-4">Support</span>
             <ul className="flex flex-col gap-2.5">
               {[
                 { label: "Support", href: "/support" },
@@ -89,8 +89,8 @@ export function FooterSection() {
         </div>
 
         <div className="border-t border-[#27324A] pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-[#717C90] text-xs">© 2026 ZeroSqueeze. All rights reserved.</p>
-          <p className="text-[#717C90] text-xs text-center">
+          <p className="text-[#8B97AB] text-xs">© 2026 ZeroSqueeze. All rights reserved.</p>
+          <p className="text-[#8B97AB] text-xs text-center">
             All readings are estimates only, not a medical diagnosis. Consult a healthcare professional for clinical measurements.
           </p>
         </div>

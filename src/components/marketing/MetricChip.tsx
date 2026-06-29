@@ -10,10 +10,10 @@ interface MetricChipProps {
 export function MetricChip({ label, value, unit, color }: MetricChipProps) {
   return (
     <div className="rounded-xl border border-[#27324A] bg-[#141B2B] p-4 flex flex-col gap-2">
-      <span className="font-mono text-[10px] tracking-widest uppercase text-[#717C90]">{label}</span>
+      <span className="font-mono text-[10px] tracking-widest uppercase text-[#8B97AB]">{label}</span>
       <div className="flex items-baseline gap-1">
         <span className="font-display text-2xl font-bold" style={{ color }}>{value}</span>
-        <span className="font-mono text-xs text-[#717C90]">{unit}</span>
+        <span className="font-mono text-xs text-[#8B97AB]">{unit}</span>
       </div>
       <div className="w-full h-0.5 rounded-full" style={{ background: `linear-gradient(to right, ${color}60, transparent)` }} />
     </div>

@@ -43,7 +43,7 @@ export function FAQSection() {
     <section id="faq" className="py-24 px-6" style={{ background: "linear-gradient(180deg, transparent 0%, rgba(10,14,24,0.8) 100%)" }}>
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
-          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#717C90]">Questions</span>
+          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#8B97AB]">Questions</span>
           <h2 className="font-display font-bold text-[#EAF0FA] mt-3" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
             Common <span className="gradient-text">questions</span>
           </h2>
@@ -59,6 +59,7 @@ export function FAQSection() {
               <button
                 className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left"
                 onClick={() => setOpen(open === i ? null : i)}
+                aria-expanded={open === i}
               >
                 <span className="font-display font-medium text-[#EAF0FA] text-base">{faq.q}</span>
                 <div
@@ -82,7 +83,7 @@ export function FAQSection() {
           ))}
         </div>
 
-        <p className="text-center mt-10 text-[#717C90] text-sm">
+        <p className="text-center mt-10 text-[#8B97AB] text-sm">
           More questions?{" "}
           <a href="/support" className="text-[#22D3EE] hover:text-[#EAF0FA] transition-colors">Visit the support page</a>
         </p>

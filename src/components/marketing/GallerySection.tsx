@@ -24,7 +24,7 @@ export function GallerySection() {
           {screens.map((s, i) => (
             <div key={s.label} className="flex flex-col items-center gap-4" style={{ transform: i === 1 ? "translateY(-20px)" : "none" }}>
               <PhoneFrame variant={s.variant} />
-              <span className="font-mono text-[10px] tracking-widest uppercase text-[#717C90]">{s.label}</span>
+              <span className="font-mono text-[10px] tracking-widest uppercase text-[#8B97AB]">{s.label}</span>
             </div>
           ))}
         </div>

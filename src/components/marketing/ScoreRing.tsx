@@ -53,7 +53,7 @@ export function ScoreRing({ value, size = 100, label = "Score", color = "#FF3D71
         <span className="absolute font-display font-bold text-[#EAF0FA] leading-none" style={{ fontSize: size * 0.27 }}>{animated}</span>
       </div>
       {label && (
-        <span className="font-mono uppercase tracking-widest text-[#717C90] leading-none" style={{ fontSize: Math.max(size * 0.1, 9) }}>{label}</span>
+        <span className="font-mono uppercase tracking-widest text-[#8B97AB] leading-none" style={{ fontSize: Math.max(size * 0.1, 9) }}>{label}</span>
       )}
     </div>
   );

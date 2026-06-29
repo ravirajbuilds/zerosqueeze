@@ -35,12 +35,12 @@ export function ScienceSection() {
 
         {/* Visual: waveform diagram */}
         <div className="rounded-2xl border border-[#27324A] bg-[#141B2B] p-8 flex flex-col gap-6">
-          <span className="font-mono text-[10px] tracking-widest uppercase text-[#717C90]">Signal Fusion</span>
+          <span className="font-mono text-[10px] tracking-widest uppercase text-[#8B97AB]">Signal Fusion</span>
           {/* SCG waveform */}
           <div>
             <div className="flex justify-between mb-2">
               <span className="font-mono text-[10px] text-[#FF3D71] uppercase tracking-wider">SCG · Chest</span>
-              <span className="font-mono text-[9px] text-[#717C90]">Accelerometer</span>
+              <span className="font-mono text-[9px] text-[#8B97AB]">Accelerometer</span>
             </div>
             <svg viewBox="0 0 300 60" className="w-full h-14">
               <polyline
@@ -57,7 +57,7 @@ export function ScienceSection() {
           <div>
             <div className="flex justify-between mb-2">
               <span className="font-mono text-[10px] text-[#22D3EE] uppercase tracking-wider">PPG · Finger</span>
-              <span className="font-mono text-[9px] text-[#717C90]">Camera + Flash</span>
+              <span className="font-mono text-[9px] text-[#8B97AB]">Camera + Flash</span>
             </div>
             <svg viewBox="0 0 300 60" className="w-full h-14">
               <polyline
@@ -74,7 +74,7 @@ export function ScienceSection() {
           <div className="border-t border-[#27324A] pt-4 flex items-center justify-between">
             <div>
               <span className="font-mono text-[10px] text-[#A24BFF] uppercase tracking-wider block mb-1">AI Fusion Output</span>
-              <span className="font-display font-bold text-2xl text-[#EAF0FA]">118/76 <span className="text-sm font-normal text-[#717C90]">mmHg</span></span>
+              <span className="font-display font-bold text-2xl text-[#EAF0FA]">118/76 <span className="text-sm font-normal text-[#8B97AB]">mmHg</span></span>
             </div>
             <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: "linear-gradient(135deg, #A24BFF20, #FF3D7120)", border: "1px solid #A24BFF40" }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A24BFF" strokeWidth="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /><circle cx="12" cy="12" r="1" fill="#A24BFF" /></svg>

@@ -118,7 +118,7 @@ export function FeaturesSection() {
 
         {/* Live data showcase */}
         <div className="rounded-2xl border border-[#27324A] bg-[#0C1322] p-8">
-          <span className="font-mono text-[10px] tracking-widest uppercase text-[#717C90] block mb-8">Sample Reading · Estimates Only</span>
+          <span className="font-mono text-[10px] tracking-widest uppercase text-[#8B97AB] block mb-8">Sample Reading · Estimates Only</span>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             <div className="flex justify-center">
               <ScoreRing value={92} size={140} label="Heart Score" color="#FF3D71" />

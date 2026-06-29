@@ -24,7 +24,7 @@ export default function SupportPage() {
       <main className="pt-28 pb-0 relative z-10">
         {/* Hero */}
         <section className="px-6 max-w-3xl mx-auto mb-16 text-center">
-          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#717C90]">Support</span>
+          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#8B97AB]">Support</span>
           <h1 className="font-display font-bold text-[#EAF0FA] mt-3 mb-4" style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)" }}>
             How can we{" "}
             <span style={{ background: "linear-gradient(135deg, #FF3D71, #A24BFF)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
@@ -67,7 +67,7 @@ export default function SupportPage() {
                   {c.icon}
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] tracking-widest uppercase block text-[#717C90]">{c.label}</span>
+                  <span className="font-mono text-[10px] tracking-widest uppercase block text-[#8B97AB]">{c.label}</span>
                   <span className="text-sm text-[#EAF0FA] font-medium">{c.value}</span>
                 </div>
               </a>
@@ -82,7 +82,7 @@ export default function SupportPage() {
             {faqs.map((faq, i) => (
               <div key={i} className="rounded-xl border bg-[#141B2B] overflow-hidden transition-all duration-200"
                 style={{ borderColor: open === i ? "#FF3D7140" : "#27324A" }}>
-                <button className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left" onClick={() => setOpen(open === i ? null : i)}>
+                <button className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left" onClick={() => setOpen(open === i ? null : i)} aria-expanded={open === i}>
                   <span className="font-display font-medium text-[#EAF0FA] text-base">{faq.q}</span>
                   <div className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-200"
                     style={{ background: open === i ? "linear-gradient(135deg, #FF3D71, #A24BFF)" : "#27324A", transform: open === i ? "rotate(45deg)" : "none" }}>

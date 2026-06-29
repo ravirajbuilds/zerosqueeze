@@ -162,6 +162,21 @@ body {
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+    /* Anchor jumps land below the fixed navbar instead of under it. */
+    scroll-padding-top: 6rem;
+  }
+  /* Keyboard focus: a clear rose ring on every interactive element. Mouse
+   * clicks don't trigger :focus-visible, so this is keyboard-only. */
+  a:focus-visible,
+  button:focus-visible,
+  [role="button"]:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid #FF3D71;
+    outline-offset: 2px;
+    border-radius: 6px;
   }
   body {
     background-color: #0A0E18;

@@ -94,7 +94,7 @@ export function HeroSection() {
             </div>
             <div className="mt-3 pt-3 border-t border-[#27324A] flex items-baseline gap-1.5">
               <span className="font-display font-bold text-xl" style={{ color: "#A24BFF" }}>118/76</span>
-              <span className="font-mono text-[10px] text-[#717C90]">mmHg · cuffless</span>
+              <span className="font-mono text-[10px] text-[#8B97AB]">mmHg · cuffless</span>
             </div>
           </div>
         </div>

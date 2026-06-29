@@ -45,7 +45,7 @@ export default function SciencePage() {
                 <polyline points="0,40 30,40 50,38 65,10 78,60 90,32 105,45 120,40 150,40 168,38 180,8 194,62 206,30 218,46 230,40 260,40 278,37 290,9 304,63 316,29 328,47 340,40 370,40 390,38 400,40"
                   fill="none" stroke="#FF3D71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <p className="text-[10px] font-mono text-[#717C90] uppercase tracking-widest mt-1">SCG · Chest accelerometer waveform</p>
+              <p className="text-[10px] font-mono text-[#8B97AB] uppercase tracking-widest mt-1">SCG · Chest accelerometer waveform</p>
             </div>
           </div>
         </section>
@@ -73,7 +73,7 @@ export default function SciencePage() {
                 <polyline points="0,50 40,50 60,48 75,18 88,55 100,50 130,50 148,47 162,16 176,56 188,50 218,50 236,47 250,15 264,57 276,50 306,50 324,47 338,14 352,58 364,50 394,50 400,50"
                   fill="none" stroke="#22D3EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <p className="text-[10px] font-mono text-[#717C90] uppercase tracking-widest mt-1">PPG · Finger optical waveform</p>
+              <p className="text-[10px] font-mono text-[#8B97AB] uppercase tracking-widest mt-1">PPG · Finger optical waveform</p>
             </div>
           </div>
         </section>

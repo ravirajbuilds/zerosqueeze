@@ -23,12 +23,12 @@ const SITE_URL = process.env.VERCEL_URL
 const SITE_TITLE = process.env.NEXT_PUBLIC_APP_TITLE?.trim() || "ZeroSqueeze";
 const SITE_DESCRIPTION =
   process.env.NEXT_PUBLIC_APP_DESCRIPTION?.trim() ||
-  "Cuffless heart-health on your iPhone. ZeroSqueeze uses the accelerometer and camera to estimate blood pressure, heart rate, and HRV in under 60 seconds — no cuff, no wearable, all on-device.";
+  "Cuffless heart health on your iPhone. ZeroSqueeze uses the accelerometer and camera to estimate blood pressure, heart rate, HRV, and hemoglobin in under a minute. No cuff, no wearable, all on-device.";
 
 export const metadata: Metadata = {
   ...(SITE_URL ? { metadataBase: new URL(SITE_URL) } : {}),
   title: {
-    default: `${SITE_TITLE} — Your heart, in numbers`,
+    default: `${SITE_TITLE}: Your heart, in numbers`,
     template: `%s · ${SITE_TITLE}`,
   },
   description: SITE_DESCRIPTION,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_TITLE,
-    title: `${SITE_TITLE} — Your heart, in numbers`,
+    title: `${SITE_TITLE}: Your heart, in numbers`,
     description: SITE_DESCRIPTION,
     url: "/",
     locale: "en_US",

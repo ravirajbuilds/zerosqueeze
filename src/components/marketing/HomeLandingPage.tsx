@@ -8,6 +8,7 @@ import { GallerySection } from "./GallerySection";
 import { PrivacySection } from "./PrivacySection";
 import { FAQSection } from "./FAQSection";
 import { CTABandSection, FooterSection } from "./CTAAndFooter";
+import { Reveal } from "./Reveal";
 
 export function HomeLandingPage() {
   return (
@@ -15,14 +16,15 @@ export function HomeLandingPage() {
       <div className="zs-bloom" aria-hidden />
       <Navbar />
       <main className="relative z-10">
+        {/* Hero is above the fold, no reveal (keeps LCP fast). */}
         <HeroSection />
-        <FeaturesSection />
-        <HowItWorksSection />
-        <ScienceSection />
-        <GallerySection />
-        <PrivacySection />
-        <FAQSection />
-        <CTABandSection />
+        <Reveal><FeaturesSection /></Reveal>
+        <Reveal><HowItWorksSection /></Reveal>
+        <Reveal><ScienceSection /></Reveal>
+        <Reveal><GallerySection /></Reveal>
+        <Reveal><PrivacySection /></Reveal>
+        <Reveal><FAQSection /></Reveal>
+        <Reveal><CTABandSection /></Reveal>
       </main>
       <FooterSection />
     </div>
