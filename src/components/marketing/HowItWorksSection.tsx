@@ -17,7 +17,7 @@ export function HowItWorksSection() {
     {
       num: "03",
       title: "Get your Heart Check",
-      desc: "In under 60 seconds, on-device AI fuses both signals to estimate BP, HRV, HR, and produce your personalized Heart Check score. Nothing leaves your phone.",
+      desc: "Measuring both at once lets ZeroSqueeze time the pulse from chest to fingertip — the pulse transit time. In under 60 seconds, on-device AI fuses the signals into a cuffless blood-pressure index, a heart-health score, and your estimated heart age. Nothing leaves your phone.",
       color: "#A24BFF",
     },
   ];

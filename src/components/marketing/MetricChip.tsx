@@ -24,11 +24,13 @@ export function MetricChipsGrid() {
   const metrics = [
     { label: "Heart Rate", value: 62, unit: "bpm", color: "#FF3D71" },
     { label: "HRV", value: 48, unit: "ms", color: "#22D3EE" },
-    { label: "Est. SpO2", value: 98, unit: "%", color: "#2FD27A" },
+    { label: "Hemoglobin", value: 14.2, unit: "g/dL", color: "#FF7A4D" },
     { label: "Resp Rate", value: 14, unit: "br/m", color: "#A24BFF" },
+    { label: "Perfusion", value: 3.4, unit: "PI%", color: "#2FD27A" },
+    { label: "Est. SpO2", value: 98, unit: "%", color: "#22D3EE" },
   ];
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
       {metrics.map((m) => <MetricChip key={m.label} {...m} />)}
     </div>
   );

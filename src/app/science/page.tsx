@@ -65,7 +65,7 @@ export default function SciencePage() {
               Photoplethysmography uses light to detect changes in blood volume in peripheral tissue. The rear camera flash acts as the light source; the camera sensor measures variations in reflected light intensity as blood pulses through the capillaries of your fingertip.
             </p>
             <p className="text-[#A7B2C6] leading-relaxed">
-              PPG is the same optical principle used in every smartwatch and clinical pulse oximeter. ZeroSqueeze uses it to measure inter-beat intervals (IBI), heart rate, HRV, respiratory rate, and SpO2 — no additional hardware required beyond the iPhone you already own.
+              PPG is the same optical principle used in every smartwatch and clinical pulse oximeter. ZeroSqueeze uses it to measure inter-beat intervals (IBI), heart rate, HRV, respiratory rate, and SpO2. The color and pulsatility of the signal also feed a hemoglobin estimate — tuned by your sex and skin tone for an at-home anemia screen — and a perfusion index, all from the iPhone you already own.
             </p>
             <div className="mt-6">
               <svg viewBox="0 0 400 80" className="w-full h-16">
@@ -90,14 +90,18 @@ export default function SciencePage() {
               </div>
             </div>
             <p className="text-[#A7B2C6] leading-relaxed mb-4">
-              A machine learning model trained on thousands of paired SCG+PPG recordings fuses both signals to produce cardiac estimates. All inference runs on your iPhone's Neural Engine — your raw sensor data never leaves the device.
+              Captured together, chest SCG and finger PPG reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong> — the delay between the aortic valve opening (SCG) and the pulse arriving at the fingertip (PPG). That single timing feature is the key to cuffless blood pressure, and neither sensor can produce it alone. A model trained on thousands of paired recordings fuses both signals into a heart-health score and an estimated heart age. All inference runs on your iPhone's Neural Engine — your raw sensor data never leaves the device.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
               {[
-                { label: "Blood Pressure", color: "#A24BFF" },
-                { label: "Heart Rate", color: "#FF3D71" },
+                { label: "Cuffless BP", color: "#A24BFF" },
+                { label: "Heart Score", color: "#FF3D71" },
+                { label: "Heart Age", color: "#FF7A4D" },
+                { label: "Pulse Transit Time", color: "#22D3EE" },
                 { label: "HRV (RMSSD)", color: "#22D3EE" },
+                { label: "Hemoglobin", color: "#FF7A4D" },
                 { label: "Resp. Rate", color: "#2FD27A" },
+                { label: "SpO2", color: "#2FD27A" },
               ].map((m) => (
                 <div key={m.label} className="rounded-xl border border-[#27324A] bg-[#0C1322] p-3 text-center">
                   <div className="w-2 h-2 rounded-full mx-auto mb-2" style={{ background: m.color, boxShadow: `0 0 8px ${m.color}` }} />

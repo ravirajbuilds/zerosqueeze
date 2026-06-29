@@ -19,7 +19,7 @@ export function ScienceSection() {
               <strong className="text-[#EAF0FA]">Photoplethysmography (PPG)</strong> is the same optical principle used in every smartwatch and pulse oximeter — detecting changes in light absorption as blood volume pulses through your fingertip. ZeroSqueeze uses the iPhone's camera flash as the light source.
             </p>
             <p>
-              On-device machine learning fuses both signals to estimate systolic and diastolic BP, heart rate variability, respiratory rate, and SpO2. All processing happens locally — your data never touches a server.
+              Measured at the same moment, the two signals reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong> — how long the pulse takes to travel from the chest to the fingertip. On-device machine learning turns that into a cuffless blood-pressure index, a heart-health score, and an estimated heart age. From the PPG signal alone it also models <strong className="text-[#EAF0FA]">hemoglobin</strong>, using your skin tone and sex to set the reference range. All processing happens locally — your data never touches a server.
             </p>
             <div className="rounded-xl border border-[#22D3EE]/20 bg-[#22D3EE]/05 p-4">
               <p className="text-sm text-[#22D3EE]/80">

@@ -1,10 +1,16 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Nunito } from "next/font/google";
 import { cn } from "@/utils/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" });
+// Rounded display face — the web stand-in for the app's SF Pro Rounded, used on
+// titles and big numbers so the site reads warm/friendly like the iOS UI.
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
+  variable: "--font-nunito",
+});
 
 const SITE_URL = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -73,7 +79,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={cn("h-full antialiased", inter.variable, spaceGrotesk.variable)}
+      className={cn("h-full antialiased", inter.variable, nunito.variable)}
     >
       <body className="min-h-full flex flex-col">
         {children}

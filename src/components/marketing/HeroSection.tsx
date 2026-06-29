@@ -22,7 +22,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-[#A7B2C6] text-lg leading-relaxed max-w-[480px]">
-            ZeroSqueeze uses your iPhone's accelerometer and camera — already in your pocket — to estimate blood pressure, heart rate, and HRV in under 60 seconds. Estimates only, not a medical diagnosis.
+            ZeroSqueeze reads your heartbeat's vibrations from your chest and the pulse in your fingertip — heart rate, HRV, ejection time, a blood-pressure index, and hemoglobin, in seconds. All on-device. Estimates only, not a medical diagnosis.
           </p>
 
           {/* Metric chips floating */}
@@ -31,6 +31,7 @@ export function HeroSection() {
               { label: "HR", value: "62 bpm", color: "#FF3D71" },
               { label: "HRV", value: "48 ms", color: "#22D3EE" },
               { label: "BP", value: "118/76", color: "#A24BFF" },
+              { label: "Hgb", value: "14.2 g/dL", color: "#FF7A4D" },
               { label: "SpO2", value: "98%", color: "#2FD27A" },
             ].map((c) => (
               <span

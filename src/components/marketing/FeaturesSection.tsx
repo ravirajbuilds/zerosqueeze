@@ -80,6 +80,42 @@ export function FeaturesSection() {
           ))}
         </div>
 
+        {/* More than a scanner */}
+        <div className="text-center mb-12">
+          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#22D3EE]">More than a scanner</span>
+          <h2 className="font-display font-bold text-[#EAF0FA] mt-3" style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)" }}>
+            A daily picture of your <span className="gradient-text">heart health</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+          {[
+            {
+              eyebrow: "Hemoglobin",
+              title: "Anemia awareness",
+              desc: "Estimate hemoglobin from your fingertip — no needle. Skin tone and sex tune your reference range so the screen reads Normal, Mild, Moderate, or Severe.",
+              color: "#FF7A4D",
+            },
+            {
+              eyebrow: "Trends",
+              title: "Daily readiness",
+              desc: "A single score from your heart-rate and HRV trends tells you whether your body is recovered or running hot today.",
+              color: "#22D3EE",
+            },
+            {
+              eyebrow: "Calm",
+              title: "Guided breathing",
+              desc: "Paced sessions to settle your pulse and reset — then measure again to see the change in your numbers.",
+              color: "#A24BFF",
+            },
+          ].map((f) => (
+            <div key={f.title} className="rounded-2xl border border-[#27324A] bg-[#141B2B] p-6 flex flex-col gap-3">
+              <span className="font-mono text-[10px] tracking-widest uppercase block" style={{ color: f.color }}>{f.eyebrow}</span>
+              <h3 className="font-display font-semibold text-xl text-[#EAF0FA]">{f.title}</h3>
+              <p className="text-[#A7B2C6] text-sm leading-relaxed">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+
         {/* Live data showcase */}
         <div className="rounded-2xl border border-[#27324A] bg-[#0C1322] p-8">
           <span className="font-mono text-[10px] tracking-widest uppercase text-[#717C90] block mb-8">Sample Reading · Estimates Only</span>
