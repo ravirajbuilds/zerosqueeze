@@ -4,7 +4,7 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { CTABandSection, FooterSection } from "@/components/marketing/CTAAndFooter";
 
 const faqs = [
-  { q: "Is ZeroSqueeze a medical device?", a: "No. ZeroSqueeze is a wellness estimation tool, not a medical device. Readings are estimates for general awareness — not a substitute for clinical measurements or medical advice." },
+  { q: "Is ZeroSqueeze a medical device?", a: "No. ZeroSqueeze is a wellness estimation tool, not a medical device. Readings are estimates for general awareness, not a substitute for clinical measurements or medical advice." },
   { q: "How accurate are the estimates?", a: "In internal testing, estimates correlate closely with cuff readings under consistent conditions. Accuracy varies by individual, phone model, and technique. Treat all values as estimates only." },
   { q: "Which iPhones are supported?", a: "iPhone 6 and newer, iOS 16 or later. For best SCG accuracy, iPhone 12 or newer is recommended due to improved accelerometer sensitivity." },
   { q: "Why does my reading vary?", a: "BP, HRV, and HR naturally fluctuate throughout the day. Trends over time are more meaningful than individual readings." },

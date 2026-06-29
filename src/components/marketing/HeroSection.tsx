@@ -19,7 +19,7 @@ export function HeroSection() {
           <h1 className="font-display font-bold leading-[1.05] text-[#EAF0FA]" style={{ fontSize: "clamp(2.4rem, 5.5vw, 4.5rem)" }}>
             Your heart,{" "}
             <span className="gradient-text">in numbers</span>
-            {" "}— no cuff, no wearable
+,{" "}no cuff, no wearable
           </h1>
 
           <p className="text-[#A7B2C6] text-lg leading-relaxed max-w-[480px]">

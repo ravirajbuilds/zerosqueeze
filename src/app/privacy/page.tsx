@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             </span>
           </h1>
           <p className="text-[#A7B2C6] text-lg leading-relaxed mb-12">
-            ZeroSqueeze was designed from day one with privacy as a hard constraint. Here is exactly what we collect — and what we do not.
+            ZeroSqueeze was built from day one with privacy as a hard rule. Here is exactly what we collect, and what we do not.
           </p>
 
           {[
@@ -28,12 +28,12 @@ export default function PrivacyPage() {
             {
               title: "Sensor access",
               color: "#22D3EE",
-              content: "ZeroSqueeze requests access to the accelerometer (for SCG) and rear camera + flash (for PPG). These are used only during an active measurement session. Sensor data is processed in real time and discarded immediately — it is never written to disk or transmitted anywhere.",
+              content: "ZeroSqueeze requests access to the accelerometer (for SCG) and rear camera + flash (for PPG). These are used only during an active measurement session. Sensor data is processed in real time and discarded immediately. It is never written to disk or transmitted anywhere.",
             },
             {
               title: "Apple HealthKit",
               color: "#A24BFF",
-              content: "If you choose to enable HealthKit integration, reading estimates are saved locally to the Apple Health app on your device — under your full control. ZeroSqueeze never reads other HealthKit categories, and you can revoke access at any time in iOS Settings.",
+              content: "If you choose to enable HealthKit integration, reading estimates are saved locally to the Apple Health app on your device, under your full control. ZeroSqueeze never reads other HealthKit categories, and you can revoke access at any time in iOS Settings.",
             },
             {
               title: "Analytics & tracking",
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
             {
               title: "Children",
               color: "#2FD27A",
-              content: "ZeroSqueeze does not knowingly collect any data from any user — adult or child. Since no data is collected at all, COPPA and similar regulations are satisfied by design.",
+              content: "ZeroSqueeze does not knowingly collect any data from any user, adult or child. Since no data is collected at all, COPPA and similar regulations are satisfied by design.",
             },
           ].map((s) => (
             <div key={s.title} className="mb-8 rounded-2xl border border-[#27324A] bg-[#141B2B] p-6">

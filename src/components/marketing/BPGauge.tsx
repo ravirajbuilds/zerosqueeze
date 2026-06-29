@@ -36,7 +36,7 @@ export function BPGauge({ systolic = 118, diastolic = 76 }: BPGaugeProps) {
         <span>ELEVATED</span>
         <span className="text-[#FF3D71]">HIGH</span>
       </div>
-      <p className="mt-3 text-xs text-[#717C90]">Estimates only — not a medical diagnosis.</p>
+      <p className="mt-3 text-xs text-[#717C90]">Estimates only, not a medical diagnosis.</p>
     </div>
   );
 }

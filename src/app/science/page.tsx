@@ -18,7 +18,7 @@ export default function SciencePage() {
             </span>
           </h1>
           <p className="text-[#A7B2C6] text-lg leading-relaxed max-w-2xl">
-            ZeroSqueeze combines two well-studied physiological sensing techniques — Seismocardiography and Photoplethysmography — and fuses them with on-device machine learning to estimate cardiac metrics without any external hardware.
+            ZeroSqueeze combines two well-studied sensing techniques, Seismocardiography and Photoplethysmography, and fuses them with on-device machine learning to estimate cardiac metrics without any external hardware.
           </p>
         </section>
 
@@ -38,7 +38,7 @@ export default function SciencePage() {
               Seismocardiography measures the vibrations transmitted to the chest wall by the mechanical activity of the heart. Each heartbeat creates micro-accelerations that a modern smartphone's inertial measurement unit can detect. This technique has been studied in peer-reviewed literature since the early 1990s.
             </p>
             <p className="text-[#A7B2C6] leading-relaxed">
-              When placed flat on the sternum, the iPhone's three-axis accelerometer captures these vibrations at high sample rates. ZeroSqueeze's signal processing pipeline extracts timing features correlated with systolic and diastolic phases — enabling a cuffless BP estimate with no additional hardware.
+              When placed flat on the sternum, the iPhone's three-axis accelerometer captures these vibrations at high sample rates. ZeroSqueeze's signal processing pipeline extracts timing features correlated with systolic and diastolic phases, which gives a cuffless BP estimate with no additional hardware.
             </p>
             <div className="mt-6">
               <svg viewBox="0 0 400 80" className="w-full h-16">
@@ -66,7 +66,7 @@ export default function SciencePage() {
               Photoplethysmography uses light to detect changes in blood volume in peripheral tissue. The rear camera flash acts as the light source; the camera sensor measures variations in reflected light intensity as blood pulses through the capillaries of your fingertip.
             </p>
             <p className="text-[#A7B2C6] leading-relaxed">
-              PPG is the same optical principle used in every smartwatch and clinical pulse oximeter. ZeroSqueeze uses it to measure inter-beat intervals (IBI), heart rate, HRV, respiratory rate, and SpO2. The color and pulsatility of the signal also feed a hemoglobin estimate — tuned by your sex and skin tone for an at-home anemia screen — and a perfusion index, all from the iPhone you already own.
+              PPG is the same optical principle used in every smartwatch and clinical pulse oximeter. ZeroSqueeze uses it to measure inter-beat intervals (IBI), heart rate, HRV, respiratory rate, and SpO2. The color and pulsatility of the signal also feed a hemoglobin estimate, tuned by your sex and skin tone for an at-home anemia screen, plus a perfusion index, all from the iPhone you already own.
             </p>
             <div className="mt-6">
               <svg viewBox="0 0 400 80" className="w-full h-16">
@@ -91,7 +91,7 @@ export default function SciencePage() {
               </div>
             </div>
             <p className="text-[#A7B2C6] leading-relaxed mb-4">
-              Captured together, chest SCG and finger PPG reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong> — the delay between the aortic valve opening (SCG) and the pulse arriving at the fingertip (PPG). That single timing feature is the key to cuffless blood pressure, and neither sensor can produce it alone. A model trained on thousands of paired recordings fuses both signals into a heart-health score and an estimated heart age. All inference runs on your iPhone's Neural Engine — your raw sensor data never leaves the device.
+              Captured together, chest SCG and finger PPG reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong>, the delay between the aortic valve opening (SCG) and the pulse arriving at the fingertip (PPG). That single timing feature is the key to cuffless blood pressure, and neither sensor can produce it alone. A model trained on thousands of paired recordings fuses both signals into a heart-health score and an estimated heart age. All inference runs on your iPhone's Neural Engine, so your raw sensor data never leaves the device.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
               {[

@@ -38,7 +38,7 @@ export function CTABandSection() {
         </a>
 
         <p className="text-[#717C90] text-xs">
-          Requires iPhone · iOS 16+ · Free · Estimates only — not a medical diagnosis
+          Requires iPhone · iOS 16+ · Free · Estimates only, not a medical diagnosis
         </p>
       </div>
     </section>
@@ -89,9 +89,9 @@ export function FooterSection() {
         </div>
 
         <div className="border-t border-[#27324A] pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-[#717C90] text-xs">© 2025 ZeroSqueeze. All rights reserved.</p>
+          <p className="text-[#717C90] text-xs">© 2026 ZeroSqueeze. All rights reserved.</p>
           <p className="text-[#717C90] text-xs text-center">
-            All readings are estimates only — not a medical diagnosis. Consult a healthcare professional for clinical measurements.
+            All readings are estimates only, not a medical diagnosis. Consult a healthcare professional for clinical measurements.
           </p>
         </div>
       </div>

@@ -19,7 +19,7 @@ export function ScienceSection() {
               <strong className="text-[#EAF0FA]">Photoplethysmography (PPG)</strong> is the same idea your smartwatch and the clip at the doctor's office use: shine a light through your skin and watch it dim and brighten as blood pulses past. Here the iPhone's flash is the light.
             </p>
             <p>
-              Measured at the same moment, the two signals reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong> — how long the pulse takes to travel from the chest to the fingertip. On-device machine learning turns that into a cuffless blood-pressure index, a heart-health score, and an estimated heart age. From the PPG signal alone it also models <strong className="text-[#EAF0FA]">hemoglobin</strong>, using your skin tone and sex to set the reference range. All processing happens locally — your data never touches a server.
+              Measured at the same moment, the two signals reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong>, how long the pulse takes to travel from the chest to the fingertip. On-device machine learning turns that into a cuffless blood-pressure index, a heart-health score, and an estimated heart age. From the PPG signal alone it also models <strong className="text-[#EAF0FA]">hemoglobin</strong>, using your skin tone and sex to set the reference range. All of it happens locally. Your data never touches a server.
             </p>
             <div className="rounded-xl border border-[#22D3EE]/20 bg-[#22D3EE]/05 p-4">
               <p className="text-sm text-[#22D3EE]/80">

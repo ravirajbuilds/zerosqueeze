@@ -20,15 +20,15 @@ const faqs = [
   },
   {
     q: "How long does a measurement take?",
-    a: "A full Heart Check — including SCG, PPG, and AI fusion — takes approximately 45–60 seconds. You'll need to stay still during the measurement for best accuracy.",
+    a: "A full Heart Check, with the chest, finger, and fusion steps, takes about 45 to 60 seconds. You'll need to stay still during the measurement for best accuracy.",
   },
   {
     q: "Can my phone really estimate hemoglobin without a needle?",
-    a: "ZeroSqueeze models hemoglobin from the color and pulsatility of light through your fingertip during the camera (PPG) reading. To sharpen the estimate it uses your sex to set the reference range and an optional skin-tone selection, since melanin changes how light moves through skin. It's a wellness estimate for anemia awareness, not a blood test — confirm any concerning result with a clinician.",
+    a: "ZeroSqueeze models hemoglobin from the color and pulsatility of light through your fingertip during the camera (PPG) reading. To sharpen the estimate it uses your sex to set the reference range and an optional skin-tone selection, since melanin changes how light moves through skin. It's a wellness estimate for anemia awareness, not a blood test, so confirm any concerning result with a clinician.",
   },
   {
     q: "What is heart age?",
-    a: "Heart age translates your Heart Check — heart rate, HRV, blood-pressure index, and pulse transit time — into a single, intuitive number you can compare to your real age. It's a directional wellness signal, not a clinical measurement.",
+    a: "Heart age takes your Heart Check (heart rate, HRV, blood-pressure index, and pulse transit time) and turns it into a single number you can compare to your real age. It's a directional wellness signal, not a clinical measurement.",
   },
   {
     q: "Why does my reading vary between sessions?",
