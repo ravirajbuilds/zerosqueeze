@@ -81,7 +81,7 @@ export function HeroSection() {
           </div>
           {/* Floating Heart Check score card — the app's signature result. */}
           <div
-            className="absolute -left-2 sm:left-2 lg:-left-6 bottom-6 z-20 zs-card-tint p-4 w-[190px] animate-float"
+            className="hidden lg:block absolute -left-6 bottom-6 z-20 zs-card-tint p-4 w-[190px] animate-float"
             style={{ ["--tint" as string]: "#FF3D71", animationDelay: "0.8s" }}
           >
             <span className="zs-eyebrow block mb-3" style={{ ["--tint" as string]: "#A7B2C6" }}>Heart Check</span>
