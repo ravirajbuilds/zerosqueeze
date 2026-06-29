@@ -44,9 +44,8 @@ export const metadata: Metadata = {
     "iPhone health",
     "on-device",
   ],
-  icons: {
-    icon: "/icon.svg",
-  },
+  // Favicon + apple-touch-icon come from src/app/icon.png and
+  // src/app/apple-icon.png automatically (Next.js file conventions).
   openGraph: {
     type: "website",
     siteName: SITE_TITLE,
