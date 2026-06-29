@@ -5,7 +5,7 @@ import { ScoreRing } from "./ScoreRing";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-svh flex items-center overflow-hidden pt-16">
+    <section className="relative min-h-svh flex items-center overflow-hidden pt-24">
       {/* Background gradient */}
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(162,75,255,0.12) 0%, rgba(255,61,113,0.08) 30%, transparent 70%)" }} />
 

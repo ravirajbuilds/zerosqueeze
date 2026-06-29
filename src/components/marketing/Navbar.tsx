@@ -22,11 +22,11 @@ export function Navbar() {
         borderBottom: scrolled ? "1px solid #27324A" : "none",
       }}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
-          <SeismicMark size={34} spin={false} glow={false} />
-          <span className="font-display font-bold text-lg text-[#EAF0FA] tracking-tight">ZeroSqueeze</span>
+          <SeismicMark size={44} spin={false} glow={false} />
+          <span className="font-display font-extrabold text-xl text-[#EAF0FA] tracking-tight">ZeroSqueeze</span>
         </Link>
 
         {/* Desktop links */}
