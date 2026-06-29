@@ -2,6 +2,59 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { CTABandSection, FooterSection } from "@/components/marketing/CTAAndFooter";
 import { SeismicMark } from "@/components/marketing/SeismicMark";
 
+// Peer-reviewed sources behind the claims on this page. Each links to a stable
+// page for the work (IEEE Xplore / ACM DL / Nature / Google Scholar).
+const REFERENCES = [
+  {
+    text: "O. T. Inan et al., \"Ballistocardiography and Seismocardiography: A Review of Recent Advances,\" IEEE J. Biomed. Health Inform., vol. 19, no. 4, pp. 1414–1427, 2015.",
+    url: "https://scholar.google.com/scholar?q=Ballistocardiography+and+Seismocardiography+A+Review+of+Recent+Advances+Inan",
+  },
+  {
+    text: "M. S. Imtiaz et al., \"Correlation between seismocardiogram and systolic blood pressure,\" IEEE Canadian Conf. Electrical and Computer Engineering (CCECE), 2013.",
+    url: "https://ieeexplore.ieee.org/document/6567773",
+  },
+  {
+    text: "R. Mukkamala et al., \"Toward Ubiquitous Blood Pressure Monitoring via Pulse Transit Time: Theory and Practice,\" IEEE Trans. Biomed. Eng., vol. 62, no. 8, pp. 1879–1901, 2015.",
+    url: "https://scholar.google.com/scholar?q=Toward+Ubiquitous+Blood+Pressure+Monitoring+via+Pulse+Transit+Time+Theory+and+Practice+Mukkamala",
+  },
+  {
+    text: "K. Sørensen et al., \"Challenges in using seismocardiography for blood pressure monitoring,\" Computing in Cardiology (IEEE), 2017.",
+    url: "https://ieeexplore.ieee.org/document/8331454",
+  },
+  {
+    text: "A. M. Carek et al., \"SeismoWatch: Wearable Cuffless Blood Pressure Monitoring Using Pulse Transit Time,\" Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., vol. 1, no. 3, 2017.",
+    url: "https://dl.acm.org/doi/10.1145/3130905",
+  },
+  {
+    text: "E. J. Wang et al., \"HemaApp: Noninvasive Blood Screening of Hemoglobin Using Smartphone Cameras,\" ACM UbiComp, pp. 593–604, 2016.",
+    url: "https://dl.acm.org/doi/10.1145/2971648.2971653",
+  },
+  {
+    text: "R. G. Mannino et al., \"Smartphone app for non-invasive detection of anemia using only patient-sourced photos,\" Nature Communications, vol. 9, art. 4924, 2018.",
+    url: "https://www.nature.com/articles/s41467-018-07262-2",
+  },
+  {
+    text: "Seismocardiogram-based blood-pressure estimation study, IEEE Xplore, 2024.",
+    url: "https://ieeexplore.ieee.org/document/10522589",
+  },
+];
+
+// Superscript citation marker linking to the References list.
+function Cite({ ids }: { ids: number[] }) {
+  return (
+    <sup className="text-[11px] font-mono">
+      [
+      {ids.map((n, i) => (
+        <span key={n}>
+          {i > 0 && ","}
+          <a href={`#ref-${n}`} className="text-[#22D3EE] hover:text-[#EAF0FA] no-underline">{n}</a>
+        </span>
+      ))}
+      ]
+    </sup>
+  );
+}
+
 export default function SciencePage() {
   return (
     <div style={{ background: "#0A0E18" }} className="min-h-svh relative">
@@ -35,10 +88,10 @@ export default function SciencePage() {
               </div>
             </div>
             <p className="text-[#A7B2C6] leading-relaxed mb-4">
-              Seismocardiography measures the vibrations transmitted to the chest wall by the mechanical activity of the heart. Each heartbeat creates micro-accelerations that a modern smartphone's inertial measurement unit can detect. This technique has been studied in peer-reviewed literature since the early 1990s.
+              Seismocardiography measures the vibrations transmitted to the chest wall by the mechanical activity of the heart. Each heartbeat creates micro-accelerations that a modern smartphone's inertial measurement unit can detect. This technique has been studied in peer-reviewed literature since the early 1990s.<Cite ids={[1]} />
             </p>
             <p className="text-[#A7B2C6] leading-relaxed">
-              When placed flat on the sternum, the iPhone's three-axis accelerometer captures these vibrations at high sample rates. ZeroSqueeze's signal processing pipeline extracts timing features correlated with systolic and diastolic phases, which gives a cuffless BP estimate with no additional hardware.
+              When placed flat on the sternum, the iPhone's three-axis accelerometer captures these vibrations at high sample rates. ZeroSqueeze's signal processing pipeline extracts timing features correlated with systolic and diastolic phases, which gives a cuffless BP estimate with no additional hardware.<Cite ids={[2, 4]} />
             </p>
             <div className="mt-6">
               <svg viewBox="0 0 400 80" className="w-full h-16">
@@ -66,7 +119,7 @@ export default function SciencePage() {
               Photoplethysmography uses light to detect changes in blood volume in peripheral tissue. The rear camera flash acts as the light source; the camera sensor measures variations in reflected light intensity as blood pulses through the capillaries of your fingertip.
             </p>
             <p className="text-[#A7B2C6] leading-relaxed">
-              PPG is the same optical principle used in every smartwatch and clinical pulse oximeter. ZeroSqueeze uses it to measure inter-beat intervals (IBI), heart rate, HRV, respiratory rate, and SpO2. The color and pulsatility of the signal also feed a hemoglobin estimate, tuned by your sex and skin tone for an at-home anemia screen, plus a perfusion index, all from the iPhone you already own.
+              PPG is the same optical principle used in every smartwatch and clinical pulse oximeter. ZeroSqueeze uses it to measure inter-beat intervals (IBI), heart rate, HRV, respiratory rate, and SpO2. The color and pulsatility of the signal also feed a hemoglobin estimate, tuned by your sex and skin tone for an at-home anemia screen, plus a perfusion index, all from the iPhone you already own.<Cite ids={[6, 7]} />
             </p>
             <div className="mt-6">
               <svg viewBox="0 0 400 80" className="w-full h-16">
@@ -91,7 +144,7 @@ export default function SciencePage() {
               </div>
             </div>
             <p className="text-[#A7B2C6] leading-relaxed mb-4">
-              Captured together, chest SCG and finger PPG reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong>, the delay between the aortic valve opening (SCG) and the pulse arriving at the fingertip (PPG). That single timing feature is the key to cuffless blood pressure, and neither sensor can produce it alone. A model trained on thousands of paired recordings fuses both signals into a heart-health score and an estimated heart age. All inference runs on your iPhone's Neural Engine, so your raw sensor data never leaves the device.
+              Captured together, chest SCG and finger PPG reveal the <strong className="text-[#EAF0FA]">pulse transit time</strong>, the delay between the aortic valve opening (SCG) and the pulse arriving at the fingertip (PPG). That single timing feature is the key to cuffless blood pressure, and neither sensor can produce it alone.<Cite ids={[3, 5, 8]} /> A model trained on thousands of paired recordings fuses both signals into a heart-health score and an estimated heart age. All inference runs on your iPhone's Neural Engine, so your raw sensor data never leaves the device.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
               {[
@@ -111,6 +164,30 @@ export default function SciencePage() {
               ))}
             </div>
           </div>
+        </section>
+
+        {/* References */}
+        <section className="px-6 max-w-4xl mx-auto mb-16">
+          <span className="font-mono text-xs tracking-[0.2em] uppercase text-[#22D3EE]">References</span>
+          <h2 className="font-display font-semibold text-[#EAF0FA] text-2xl mt-2 mb-6">The research behind it</h2>
+          <ol className="flex flex-col gap-3">
+            {REFERENCES.map((ref, i) => (
+              <li key={i} id={`ref-${i + 1}`} className="flex gap-3 text-sm scroll-mt-28">
+                <span className="font-mono text-[#22D3EE] flex-shrink-0">[{i + 1}]</span>
+                <a
+                  href={ref.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#A7B2C6] hover:text-[#EAF0FA] transition-colors leading-relaxed"
+                >
+                  {ref.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+          <p className="text-xs text-[#8B97AB] mt-5 leading-relaxed">
+            ZeroSqueeze builds on published methods in seismocardiography, photoplethysmography, and pulse-transit-time blood pressure. These references describe the underlying techniques; they are not validation studies of this app, and its readings remain wellness estimates.
+          </p>
         </section>
 
         {/* Disclaimer */}
