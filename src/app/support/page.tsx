@@ -43,15 +43,15 @@ export default function SupportPage() {
               {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" strokeWidth="1.5" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>,
                 label: "Email Support",
-                value: "support@zerosqueeze.app",
-                href: "mailto:support@zerosqueeze.app",
+                value: "satish.santhakumar@gmail.com",
+                href: "mailto:satish.santhakumar@gmail.com",
                 color: "#22D3EE",
               },
               {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A24BFF" strokeWidth="1.5" strokeLinecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>,
                 label: "Privacy Questions",
-                value: "privacy@zerosqueeze.app",
-                href: "mailto:privacy@zerosqueeze.app",
+                value: "satish.santhakumar@gmail.com",
+                href: "mailto:satish.santhakumar@gmail.com",
                 color: "#A24BFF",
               },
             ].map((c) => (
